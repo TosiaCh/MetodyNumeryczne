@@ -1,0 +1,2 @@
+a) wynik dla x=1 to 1.40078
+b) ilość obliczeń = 35

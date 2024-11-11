@@ -1,0 +1,26 @@
+
+Dokumentacja programu do obliczeń własnych macierzy:
+
+Opis ogólny:
+Program implementuje trzy różne metody znajdowania wartości własnych macierzy: potęgową, Rayleigha i QR. Celem każdej z tych metod jest rozwiązanie problemu własnego dla danej macierzy, czyli znalezienie wartości własnych i odpowiadających im wektorów własnych. Każda metoda wykorzystuje unikalne podejście iteracyjne do zbliżania się do poszukiwanych wartości własnych.
+
+Metoda potęgowa (power_iteration):
+Opis:
+Metoda potęgowa jest algorytmem iteracyjnym służącym do znajdowania dominującej wartości własnej i odpowiadającego jej wektora własnego macierzy.
+Rozpoczynamy od losowego wektora własnego, a następnie iteracyjnie modyfikujemy go w taki sposób, aby zbiegał do dominującego wektora własnego.
+W każdej iteracji, mnożymy wektor własny przez macierz, a następnie normalizujemy go, aby uzyskać kolejny przybliżony wektor własny.
+Proces ten jest powtarzany do momentu, gdy wektor własny zbiega się do dominującej wartości własnej.
+
+Metoda Rayleigha (rayleigh_quotient_iteration):
+Opis:
+Metoda Rayleigha jest algorytmem iteracyjnym służącym do znajdowania wartości własnych macierzy poprzez iteracyjne ulepszanie przybliżenia wartości własnych.
+Rozpoczynamy od losowego wektora, a następnie iteracyjnie go poprawiamy, używając ilorazu Rayleigha.
+W każdej iteracji, mnożymy wektor przez macierz, a następnie normalizujemy go. Wartość własna jest obliczana poprzez iloraz Rayleigha.
+Proces ten jest powtarzany do momentu, gdy wartość własna zbiega się do poprzedniej wartości.
+
+Metoda QR (qr_iteration_eigenvalues):
+Opis:
+Metoda QR jest algorytmem iteracyjnym służącym do znajdowania wszystkich wartości własnych macierzy.
+Iteracyjnie faktoryzujemy macierz w postaci QR, gdzie Q to macierz ortogonalna, a R to macierz trójkątna.
+Następnie tworzymy nową macierz jako iloczyn odwrotnej macierzy Q i R. Proces ten jest powtarzany.
+Algorytm zbiega do macierzy diagonalnej, a wartości własne są odczytywane z diagonali.

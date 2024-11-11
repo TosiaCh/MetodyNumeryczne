@@ -1,0 +1,18 @@
+Dokumentacja do Kodu
+Kod zawiera implementację trzech metod numerycznych do obliczania wartości własnych macierzy kwadratowej: iteracji potęgowej, algorytmu QR oraz metody Jacobiego.
+
+Funkcje
+1. iteracja_potegowa(macierz, liczba_iteracji=100)
+Metoda iteracji potęgowej polega na wielokrotnym mnożeniu macierzy przez wektor, co pozwala na wyciągnięcie dominującej wartości własnej. Wraz z każdą iteracją wektor jest normalizowany i stosowana jest deflacja, aby znaleźć kolejne wartości własne.
+
+2. algorytm_qr(macierz, liczba_iteracji=100)
+Algorytm QR polega na iteracyjnym obliczaniu rozkładu QR macierzy i aktualizowaniu macierzy przez mnożenie macierzy R i Q. Konwerguje on do macierzy, której wartości na przekątnej są wartościami własnymi macierzy wejściowej.
+
+3. metoda_jacobiego(macierz, liczba_iteracji=100)
+Metoda Jacobiego polega na przekształceniu macierzy do formy diagonalnej poprzez serię rotacji. Dla macierzy symetrycznych, metoda ta jest efektywna i po wielu iteracjach przekształca macierz do postaci, gdzie na przekątnej znajdują się wartości własne.
+
+Opis Ogólny
+Wartości własne obliczane są dla macierzy A.
+Dla każdej z metod, przeprowadzane są obliczenia, a czas ich trwania jest mierzony.
+Wyniki są wypisywane na ekran, w tym wartości własne obliczone każdą z metod oraz czas wykonania.
+Dodatkowo, kod identyfikuje i wypisuje, która z metod była najszybsza.
